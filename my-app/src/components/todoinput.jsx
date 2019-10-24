@@ -12,17 +12,19 @@ export default class Todo extends React.Component {
   }
 
   handleChange(e) {
-    console.log("change here");
+    this.setState({value: e.target.value});
   }
 
   addTodo(todo) {
-    console.log("TODO", todo);
+    if (todo.lenght > 0)
+    this.props.addTodo(todo);
+    this.setState({value: ''});
   }
 
   render() {
     return (
       <div>
-        <input type="text" value="" onChange={this.handleChange} />
+        <input type="text" value={this.state.value} onChange={this.handleChange} />
         <button className="btn btn-primary" onClick={() => this.addTodo(this.state.value)}>Submit</button>
       </div>
     );
