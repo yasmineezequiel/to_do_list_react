@@ -1,0 +1,37 @@
+.btn {
+  box-shadow:inset 0px 0px 14px -3px #f2fadc;
+	background-color:transparent;
+	border-radius:6px;
+	border:1px solid #b2b8ad;
+	display:inline-block;
+	cursor:pointer;
+	color: black;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 24px;
+  text-decoration:none;
+  margin: 15px;
+}
+
+.btn:hover {
+  border: 5px solid rgba(73, 204, 249, 1.0);
+  background-color: lightyellow;
+}
+
+.btn:active {
+	position:relative;
+  padding: 10px;
+}
+
+input {
+  width: 80%;
+  padding: 15px 22px;
+  border: 5px solid rgba(73, 204, 249, 1.0);
+  background-color: lightyellow;
+}
+
+body {
+  background-color: lightyellow;
+}
+
